@@ -40,5 +40,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-exec');
 
     grunt.registerTask('scan', ['ecs-scan']);
-    grunt.registerTask('default', ['scan', 'exec']);
+    grunt.registerTask('mvn', ['exec:maven']);
+    grunt.registerTask('default', ['scan', 'mvn']);
 };
