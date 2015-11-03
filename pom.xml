@@ -53,7 +53,7 @@
             <plugin>
                 <groupId>de.eacg</groupId>
                 <artifactId>ecs-mvn-plugin</artifactId>
-                <version>0.0.2-SNAPSHOT</version>
+                <version>0.1.0</version>
                 <configuration>
                     <credentials>~/.ecsrc.json</credentials>
                     <projectName>SampleMvn</projectName>
