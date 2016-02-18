@@ -1,0 +1,41 @@
+
+buildscript {
+    dependencies {
+        classpath 'de.eacg:ecs-gradle-plugin:0.1.2'
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+description = 'Gradle master project'
+
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+    apply plugin: 'maven'
+    group = 'de.eacg'
+    version = '0.0.1'
+}
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+}
+
+project(':ecs-gradle-sample-depA') {
+    apply plugin: 'de.eacg.ecs.plugin.gradle'
+
+    ecsPlugin {
+        //configuration 'runtime'
+        credentials = '~/.ecsrc.json'
+        verbose = false
+
+        skipTransfer = false
+        baseUrl = "http://localhost:3000"
+    }
+}

@@ -30,7 +30,8 @@ module.exports = function (grunt) {
         },
 
         exec: {
-            maven: 'mvn ecs-mvn:dependency-scan'
+            maven: 'mvn ecs-mvn:dependency-scan',
+            gradle: './gradlew build dependency-scan'
         }
     });
 
@@ -39,5 +40,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask('scan', ['ecs-scan']);
     grunt.registerTask('mvn', ['exec:maven']);
-    grunt.registerTask('default', ['scan', 'mvn']);
+    grunt.registerTask('default', ['scan']);
 };

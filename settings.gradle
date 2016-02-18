@@ -1,0 +1,7 @@
+rootProject.name = 'ecs-gradle-sample-master'
+include ':ecs-gradle-sample-depA'
+include ':ecs-gradle-sample-depB'
+
+project(':ecs-gradle-sample-depA').projectDir = "$rootDir/dependencyA" as File
+project(':ecs-gradle-sample-depB').projectDir = "$rootDir/dependencyB" as File
+

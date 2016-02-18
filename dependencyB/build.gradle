@@ -1,0 +1,5 @@
+
+description = 'dependency B'
+dependencies {
+    runtime 'junit:junit:4.12'
+}
