@@ -1,5 +1,6 @@
 # ecs-sample-project
-sample project with different taskrunner and package manager configurations
+sample project with different taskrunner and package manager configurations 
+See: https://ecs.eacg.de
 
 ### Possible commands
 #### Grunt
