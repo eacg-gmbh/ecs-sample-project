@@ -1,5 +1,0 @@
-
-description = 'dependency A'
-dependencies {
-  compile project(':ecs-gradle-sample-depB')
-}
