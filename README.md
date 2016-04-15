@@ -12,7 +12,7 @@ See: https://ecs.eacg.de
 - mvn clean install ecs-mvn:dependency-scan
 
 #### Gradle
-- gradle clean build dependency-scan
+- gradle clean build ecsScan
 
 #### Gulp
 - gulp
