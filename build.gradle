@@ -51,7 +51,6 @@ project(':ecs-gradle-sample-depA') {
         credentials = '~/.ecsrc.json'
         verbose = true
         projectName = "ecs-sample-project-gradle"
-        baseUrl = "http://localhost:3000"
     }
 }
 
